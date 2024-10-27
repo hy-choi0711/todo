@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'JGaegujaengyi-Medium-KO';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/JGaegujaengyi-Medium-KO.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ece4cd;
+}
+
+header {
+  background-image: linear-gradient(to right, #2eb47c, #26998a);
+  margin-top: 0;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 0 #b1ab99;
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 100px;
+  font-family: 'JGaegujaengyi-Medium-KO';
+  text-shadow: 7px 7px 0 #245f58;
+  -webkit-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+}
+
+main {
+  width: 100%;
+}
+
+.main {
+  background-color: #ffffff;
+  width: 570px;
+  height: 500px;
+  margin: 50px;
+  padding: 30px 80px;
+  box-shadow: 0 0 20px #a7a7a7;
+  border-radius: 10px;
+}
+
+.main h1 {
+  font-size: 30px;
+}
+
+.main ul {
+  margin: 20px 0;
+  box-shadow: inset 0 0 7px #a7a7a7;
+  height: 70%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.main ul li {
+  margin-left: 21px;
+  margin-top: 2px;
+  font-size: 20px;
+}
+
+li::marker {
+  color: #636363;
+  content: "✔ ";
+}
+
+.complete {
+  text-decoration: line-through;
+  color: #a1a1a1;
+}
+
+.task-item {
+  -webkit-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+}
+
+@media (max-width: 480px) {
+   main {
+    display: flex;
+    justify-content: center;
+  }
+}
